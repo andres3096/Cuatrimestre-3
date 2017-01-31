@@ -1,0 +1,36 @@
+body {
+	background-color: #d1d5d4;
+}
+
+div {
+	display: block;
+	float: left;
+}
+
+.tablero {
+	width: 800px;
+	height: 600px;
+	margin-left: 250px;
+	margin-top: 50px;
+}
+
+.cuadros {
+	width: 100px;
+	height: 80px;
+}
+
+.ajedrez:nth-child(odd) .cuadros:nth-child(odd) {
+	background-color: white;
+}
+
+.ajedrez:nth-child(odd) .cuadros:nth-child(even) {
+	background-color: blue;
+}
+
+.ajedrez:nth-child(even) .cuadros:nth-child(even) {
+	background-color: white;
+}
+
+.ajedrez:nth-child(even) .cuadros:nth-child(odd) {
+	background-color: blue;
+}
