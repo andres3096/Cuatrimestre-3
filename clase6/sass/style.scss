@@ -1,0 +1,93 @@
+.gradiente {
+	background: #0018b6;
+	background: -webkit-linear-gradient(#0018b6 0%, #fcfcfc 25%, #ff0101 48%, #fcfcfc 75%, #0018b6 100%);
+	background: -o-linear-gradient(#0018b6 0%, #fcfcfc 25%, #ff0101 48%, #fcfcfc 75%, #0018b6 100%);
+	background: linear-gradient(#0018b6 0%, #fcfcfc 25%, #ff0101 48%, #fcfcfc 75%, #0018b6 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0018b6', endColorstr='#0018b6',GradientType=0 ); /* IE6-9 */
+	background-repeat: no-repeat;
+	max-width: 100%;
+	max-height: 100%;
+	width: 300px;
+	height: 200px;
+}	
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	text-align: center;
+	box-sizing: border-box;
+	float: left;
+	height: 100px;
+	width: 200px;
+	border: 1px solid black;
+}
+
+/*Font*/
+@font-face {
+	font-family: 'amontillado';
+	src: url('font/amontillado.woff') format('woff'),
+		url('font/amontillado.woff2') format('woff2');
+}
+
+.amontillado {
+	font-family: 'amontillado';
+}
+
+.transition {
+  background: blue;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.transition:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+.caja {
+  background: blue;
+  transform: translateX(1);
+  transition: transform 3s linear;
+  -webkit-transform: translateZ (50px);
+  -moz-transform: translateZ (50px);
+  -o-transform: translateZ (50px);
+}
+
+.caja:hover {
+  transform: translateX(1em);
+  background-color: green;
+}
+
+.rotar {
+  background: blue;
+  transform: rotate(0);
+  transition: transform 3s ease-in;
+}
+
+.rotar:hover {
+    background-color: green;
+    transform: rotate(360deg); /* Standard syntax */
+}
+
+.escala {
+  background: blue;
+  transform: scale(1, 1);
+  transition: transform 2s ease-out;
+}
+
+
+.escala:hover {
+  background-color: green;
+  transform: scale(1.4, 1.4);
+}
